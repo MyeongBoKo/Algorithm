@@ -15,6 +15,7 @@ def bfs(start):
     while q:
         v=q.popleft()
         print(v,end=' ')
+        
         for i in graph[v]:
             if not visited[i]:
                 q.append(i)
@@ -56,6 +57,7 @@ visited2 = [False]*(N+2)
 def dfs(V):
     visited1[V] = True
     print(V, end= ' ')
+   
     for i in range(1,N+1):
         if not visited1[i] and graph[V][i] == 1:
             dfs(i)
@@ -63,6 +65,7 @@ def dfs(V):
 def bfs(V):
     q = deque([V])
     visited2[V] = True
+    
     while q:
         V = q.popleft()
         print(V, end = ' ')
