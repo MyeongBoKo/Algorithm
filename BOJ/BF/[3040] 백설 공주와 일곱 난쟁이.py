@@ -9,3 +9,4 @@ for i in range(len(num_arr)):
                     pass
                 else:
                     print(num_arr[k])
+            
